@@ -26,7 +26,7 @@ module.exports = function multiply([...first], [...second]) {
 
         result.push(sumOfLastSymbols % 10);
 
-        if (sumOfLastSymbols / 10 >= 1) arrLinesOfMult.push([Math.floor(sumOfLastSymbols / 10)]);
+        if (sumOfLastSymbols >= 10) arrLinesOfMult.push([Math.floor(sumOfLastSymbols / 10)]);
 
     } while (arrLinesOfMult.length > 0 || second.length > 0);
 
